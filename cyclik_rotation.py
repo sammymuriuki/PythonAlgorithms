@@ -9,6 +9,6 @@ def cyclic_rotation(k, arr):
         arr[0]=temp
     return arr
 
-A = []
+A = [3, 8, 9, 7, 6]
 K = 3
 print(cyclic_rotation(K, A))
