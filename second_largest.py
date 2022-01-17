@@ -18,16 +18,16 @@ def solution(A):
 # Time required to sort the array is O(n log n).
 # Auxiliary space: O(1). 
 # As no extra space is required.
-arr = [-2454635434, 2454635434]
+arr = [12, 35, 1, 10, 34, 1]
 print("solution 1: ",solution(arr))
 
 
 ## MORE EFFICIENT
-# import sys
+import sys
 # sys.maxsize. Get the largest integer
 #
 def solution2(A):
-    largest = second = -2454635434
+    largest = second = -sys.maxsize
     n = len(A)
     if(n<2):
         return
@@ -38,8 +38,8 @@ def solution2(A):
     for i in range(n):
         if A[i] != largest:
             second = max(second, A[i])
-    if (second == -2454635434):
-        return
+    if (second == -sys.maxsize):
+        return 
     else:
         return second
 
